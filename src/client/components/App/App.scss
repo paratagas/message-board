@@ -1,5 +1,4 @@
-$colour__primary--dark: #101010;
-
+@import '../../styles/base';
 
 html {
   background-color: $colour__primary--dark;
@@ -14,7 +13,7 @@ body{
 
 .message--board {
   bottom: 0;
-  color: wheat;
+  color: $colour__primary--light;
   display: flex;
   justify-content: space-between;
   left: 0;

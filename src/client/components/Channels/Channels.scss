@@ -1,6 +1,8 @@
-$colour__primary--neutral: #575757;
+@import '../../styles/base';
 
 .channels {
+  @extend %board-panel;
+
   background-color: $colour__primary--neutral;
   height: 100%;
 }

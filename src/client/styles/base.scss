@@ -1,0 +1,10 @@
+/* colors */
+$colour__primary--dark: #575757;
+$colour__primary--neutral: #101010;
+$colour__primary--light: #ffffff;
+
+/* mixins and extends */
+%board-panel {
+  padding-left: 10%;
+  padding-right: 10%;
+}
