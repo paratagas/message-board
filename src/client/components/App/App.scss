@@ -1,0 +1,25 @@
+$colour__primary--dark: #101010;
+
+
+html {
+  background-color: $colour__primary--dark;
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  background-color: $colour__primary--dark;
+  height: 100%;
+}
+
+.message--board {
+  bottom: 0;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
