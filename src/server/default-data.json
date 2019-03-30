@@ -1,0 +1,38 @@
+[
+  {
+    "channel": "One",
+    "messages":
+    [
+      {
+        "content": "Channel one first message"
+      },
+      {
+        "content": "Channel one second message"
+      }
+    ]
+  },
+  {
+    "channel": "Two",
+    "messages":
+    [
+      {
+        "content": "Channel Two first message"
+      },
+      {
+        "content": "Channel Two second message"
+      }
+    ]
+  },
+  {
+    "channel": "Three",
+    "messages":
+    [
+      {
+        "content": "Channel Three first message"
+      },
+      {
+        "content": "Channel Three second message"
+      }
+    ]
+  }
+]
