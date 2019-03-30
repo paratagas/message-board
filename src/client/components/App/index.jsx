@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Spinner from "react-svg-spinner";
 import Channels from '../Channels';
 import Messages from '../Messages';
 import Editor from '../Editor';
@@ -13,6 +14,8 @@ export default class App extends Component {
       channels: [],
       loading: false,
     };
+
+    this.addMessage = this.addMessage.bind(this);
   }
 
   componentDidMount() {
@@ -32,8 +35,19 @@ export default class App extends Component {
       });
   }
 
+  addMessage(message) {
+    axios
+      .put(BASE_API_URL + 'backend/channel',  { message })
+      .then(response => {
+        //const data = response.data;
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+
   render() {
-    const { channels, loading } = this.state;
+    const {channels, loading} = this.state;
     console.log('channels: ', channels);
     console.log('loading: ', loading);
 
@@ -41,7 +55,9 @@ export default class App extends Component {
       <div className="message--board">
         <Channels />
         <Messages />
-        <Editor />
+        <Editor
+          onClickHandler={this.addMessage}
+        />
       </div>
     );
   }

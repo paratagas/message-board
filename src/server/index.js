@@ -22,8 +22,8 @@ app.get('/backend/channels', (request, response, next) => {
   response.json(initialData);
 });
 
-app.get('/backend/messages/channel', (request, response, next) => {
-  response.json(initialData);
+app.put('/backend/channel', (request, response, next) => {
+  console.log('/backend/channel: ',  request.message);
 });
 
 app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));

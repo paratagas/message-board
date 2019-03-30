@@ -1,19 +1,38 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Editor.scss';
 
 export default class Editor extends Component {
+  static propTypes = {
+    onClickHandler: PropTypes.func,
+  };
 
-  componentDidMount() {
-    /*fetch('/api/getUsername')
-      .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));*/
+  static defaultProps = {
+    onClickHandler: () => {},
+  };
+
+  constructor(props) {
+    super(props);
+    this.input = React.createRef();
   }
 
   render() {
+    const { onClickHandler } = this.props;
+    const message = 'some text';
+
     return (
       <div className="editor">
         <h3><span className="badge badge-secondary">Editor</span></h3>
-        <button type="button" className="btn btn-dark submit">Submit</button>
+        <div className="input-group">
+          <textarea className="form-control textarea" ref={this.input}></textarea>
+        </div>
+        <button
+          type="button"
+          className="btn btn-dark submit"
+          onClick={() => onClickHandler(this.input.current.value)}
+        >
+          Submit
+        </button>
       </div>
     );
   }

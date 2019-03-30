@@ -7,6 +7,13 @@
   height: 100%;
   position: relative;
 
+  .input-group {
+    .textarea {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
   h3 {
     .badge {
       @extend %badge;
