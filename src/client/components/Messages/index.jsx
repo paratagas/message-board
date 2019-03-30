@@ -12,7 +12,7 @@ export default class Messages extends Component {
   render() {
     return (
       <div className="messages">
-        Messages
+        <h3><span className="badge badge-secondary">Messages</span></h3>
       </div>
     );
   }

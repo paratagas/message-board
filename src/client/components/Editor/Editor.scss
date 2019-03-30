@@ -5,4 +5,17 @@
 
   background-color: $colour__primary--neutral;
   height: 100%;
+  position: relative;
+
+  h3 {
+    .badge {
+      @extend %badge;
+    }
+  }
+
+  .submit {
+    bottom: 10px;
+    right: 20px;
+    position: absolute;
+  }
 }

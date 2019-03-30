@@ -12,7 +12,7 @@ export default class Channels extends Component {
   render() {
     return (
       <div className="channels">
-        Channels
+        <h3><span className="badge badge-secondary">Channels</span></h3>
       </div>
     );
   }

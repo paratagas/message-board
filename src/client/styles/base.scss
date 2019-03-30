@@ -5,6 +5,10 @@ $colour__primary--light: #ffffff;
 
 /* mixins and extends */
 %board-panel {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+%badge {
+  /**/
 }

@@ -12,7 +12,8 @@ export default class Editor extends Component {
   render() {
     return (
       <div className="editor">
-        Editor
+        <h3><span className="badge badge-secondary">Editor</span></h3>
+        <button type="button" className="btn btn-dark submit">Submit</button>
       </div>
     );
   }

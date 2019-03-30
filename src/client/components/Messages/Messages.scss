@@ -5,4 +5,10 @@
 
   background-color: $colour__primary--neutral;
   height: 100%;
+
+  h3 {
+    .badge {
+      @extend %badge;
+    }
+  }
 }
